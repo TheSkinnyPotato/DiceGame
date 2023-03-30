@@ -1,0 +1,149 @@
+@mixin flex-direction($display, $rowDirectoin)
+{
+    display: $display;
+    flex-direction: $rowDirectoin;
+}
+
+#wrapper{
+    @include flex-direction(flex, column);
+    font-family: myFont;
+    justify-content: center;
+}
+
+img{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#gameRolls{
+    @include flex-direction(flex, row);
+    justify-content: space-between;
+    padding-right: 30px;
+}
+
+#PlayerRolls{
+    @include flex-direction(flex, row);
+    justify-content: space-around;
+    padding-right:20px;
+}
+
+#row{
+    @include flex-direction(flex, row);
+}
+
+#row p
+{
+    padding: 10px;
+    padding-top: 50px;
+}
+
+#popup{
+    display: none;
+    position:absolute;
+	left:30%;
+	top:40%;
+	max-width:250px;
+	min-width:200px;
+	padding:10px;
+	border-radius:10px;
+	box-shadow: 0 0 0 4px #276769;
+	background-color: cadetblue;
+	color:black;
+}
+
+#popup div{
+    display: flex;
+    justify-content:space-between;
+}
+
+#popup #popupScore{
+    @include flex-direction(flex, column);
+    align-items: center;
+}
+
+#x{
+    padding: 0px 5px;
+    cursor: pointer;
+    border-style: solid;
+    border-color: black;
+}
+
+#x:hover{
+    background-color: #595959;
+    border-color: #cccccc;
+    color: #cccccc;
+}
+
+#buttons{
+    display:flex;
+    justify-content: space-around;
+}
+
+#buttons div{
+    border-style: solid;
+    padding-right: 15px;
+    padding-left: 15px;
+    background-color: #5c8a8a;
+    border-color: #276769;
+    cursor: pointer;
+}
+
+#buttons div:hover{
+    background-color: #cccccc;
+}
+
+header{
+    background-color:  #5c8a8a;
+}
+
+h1{
+    text-align: center;
+    font-size: 50px;
+}
+
+h2{
+    padding-top: 20px;
+}
+
+ul{
+    padding-bottom: 5px;
+}
+
+main{
+    @include flex-direction(flex, column);
+    background-color: #85adad;
+    padding-left: 30px;
+    padding-bottom: 20px;
+}
+
+footer{
+    @include flex-direction(flex, column);
+    background-color: #5c8a8a;
+    align-items: center;
+}
+
+a:link{
+    color: black;
+}
+
+a:hover{
+    color: white;
+}
+
+@media screen and (max-width:560px){
+    #gameRolls{
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width:950px) {
+    footer{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+@font-face {
+    font-family: myFont;
+    src: url(../fonts/Lato-Regular.ttf);
+  }

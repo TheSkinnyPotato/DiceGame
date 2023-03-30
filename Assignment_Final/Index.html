@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Dice Game</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css" media="all">
+        <script src="http://code.jquery.com/jquery-3.4.1.min.js" defer></script>
+        <script src="Scripts/Die.js" defer></script>
+        <script src="Scripts/Player.js" defer></script>
+        <script src="Scripts/DiceGame.js" defer></script>
+        <script src="Scripts/Driver.js" defer></script>
+    </head>
+    <body>
+        <div id="wrapper">
+            <header>
+                <h1>Dice Game</h1>
+            </header>
+        
+            <main>
+                <div id="gameRolls" class="gameRolls">
+                    <div id="player">
+                        <p id="player1Points"></p>
+                        <p id="player1Roll1"></p>
+                        <p id="player1Roll2"></p>
+                        <p id="player1Roll3"></p>
+                    </div>
+
+                    <div id="player">
+                        <p id="player2Points"></p>
+                        <p id="player2Roll1"></p>
+                        <p id="player2Roll2"></p>
+                        <p id="player2Roll3"></p>
+                    </div>
+                </div>
+
+                <div id="popup">
+                    <div>
+                        <h3 id="Winner"></h3>
+                        <h3 id="x">X</h3>
+                    </div>
+
+                    <div id="popupScore">
+                        <p id="Player1Score"></p>
+                        <p id="Player2Score"></p>
+                    </div>  
+                </div>
+
+                <div id="PlayerRolls">
+                    <div id="row">
+                        <p>Player One</p>
+                        <p id="PlayerOneDie"><img src='Images/die-face-6.jpg' alt="Die Face 6" width="100"> <img src='Images/die-face-6.jpg' alt="Die Face 6" width="100"></p>
+                    </div>
+            
+                    <div id="row">
+                        <p id="PlayerTwoDie"><img src='Images/die-face-6.jpg' alt="Die Face 6" width="100"> <img src='Images/die-face-6.jpg' alt="Die Face 6" width="100"></p>
+                        <p>Player Two</p>
+                    </div>
+                </div>
+
+                <div id="buttons">
+                    <div id="playRound">
+                        <p>Play Round</p>
+                    </div>
+
+                    <div id="resetGame">
+                        <p>Reset Game</p>
+                    </div>
+                </div>
+
+                <div>
+                    <h2>Goal of the Game</h2>
+
+                    <p>
+                        You and the computer roll a pair of dice 3 times the player with the highest score at the end of the game wins.   
+                    </p>
+
+                    <h2>How To Play</h2>
+
+                    <p>
+                        play each round by clicking the 'Start Round' button. Reset the game by clicking the 'Reset Game' button.
+                    </p>
+
+                    <h2>Scoring</h2>
+
+                    <p>
+                        Each die face is worth that many points except for one which is worth zero points. 
+                    </p>
+
+                    <p>
+                        Doubles are worth the total of the two dice times two for example if you roll two fives the score will be (5+5)*2=20
+                    </p>
+                </div>
+
+            </main>
+
+            <footer>
+                <p>Kendrick Rutherford</p>
+                <p>Email: <a href="mailto:krutherford11@my.bcit.ca">krutherford11@my.bcit.ca</a></p>
+            </footer>
+        </div>
+    </body>
+</html>
