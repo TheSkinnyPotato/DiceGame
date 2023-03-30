@@ -24,12 +24,12 @@ img {
   padding-right: 20px;
 }
 
-#row {
+.row {
   display: flex;
   flex-direction: row;
 }
 
-#row p {
+.row p {
   padding: 10px;
   padding-top: 50px;
 }

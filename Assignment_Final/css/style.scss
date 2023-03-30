@@ -27,11 +27,11 @@ img{
     padding-right:20px;
 }
 
-#row{
+.row{
     @include flex-direction(flex, row);
 }
 
-#row p
+.row p
 {
     padding: 10px;
     padding-top: 50px;
